@@ -7,25 +7,25 @@ const routes = new Router({
     routes: [
         {
             path: '/',
-            component: () => import('@/layout/LayoutFront/LayoutFront'),
+            component: () => import('@/layout/Layout/Layout'),
             children: [
                 {
                     path: '',
                     name: 'Main',
-                    components: {
-                        default: () => import('@/views/ViewMain'),
-                        sidebar: () => import('@/views/ViewSidebar'),
-                    },
+                    component: () => import('@/views/ViewMain'),
                     meta: {
-                        layout: 'LayoutFrontContentMain',
+                        layout: 'LayoutContentSingle',
                     }
                 },
                 {
                     path: '/chat',
                     name: 'Chat',
-                    component: () => import('@/views/ViewChat'),
+                    components: {
+                        default: () => import('@/views/ViewChat'),
+                        sidebar: () => import('@/views/ViewSidebar'),
+                    },
                     meta: {
-                        layout: 'LayoutFrontContentDefault',
+                        layout: 'LayoutContentWithSidebar',
                     },
                 },
                 {

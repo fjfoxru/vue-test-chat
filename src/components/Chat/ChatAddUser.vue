@@ -1,7 +1,7 @@
 <template>
-    <form @submit.prevent="onSubmit">
-        <input type="text" v-model="login">
-        <button>Добавить пользователя</button>
+    <form @submit.prevent="onSubmit" class="add-user">
+        <input class="input add-user__input" type="text" v-model="login">
+        <button class="button button_style_1">Добавить себя</button>
     </form>
 </template>
 <script>

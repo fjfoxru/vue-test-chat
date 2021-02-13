@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="messages-list">
     <ChatMessage v-for="(message, index) in messages" :key="index" :message="message" :clientId="clientId" />
 </div>   
 </template>

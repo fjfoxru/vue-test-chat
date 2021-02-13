@@ -1,6 +1,10 @@
 <template>
 <div>
-    <h1>Главная</h1>
-    <router-link :to="{name: 'Chat'}" class="button">Чат</router-link>
+    <header>
+        <h1 class="title title_main">Главная</h1>
+    </header>
+    <section>
+        <router-link :to="{name: 'Chat'}" class="button button_style_1">Чат</router-link>
+    </section>
 </div>
 </template>

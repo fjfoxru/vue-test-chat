@@ -69,7 +69,15 @@ export default {
             return state.user;
         },
         get_messages(state) {
-            return state.messages.reverse();
+            return state.messages;
+        },
+        get_users(state) {
+            if (state.messages) {
+                return Array.from(new Set(state.messages.map(el => el.user.name)));
+            } else {
+                return [];
+            }
+            
         },
     }
 }

@@ -1,12 +1,11 @@
 <template>
-<div>
-    <form @submit.prevent="sendMessage">
-        <label for="message">Поле для сообщения</label>
-        <input type="text" name="message" v-model="message">
-        <button>Отправить сообщение</button>
+    <form @submit.prevent="sendMessage" class="add-message">
+        <label for="message" class="add-message__label">
+            <span>Введите сообщение:</span>
+            <textarea type="text" name="message" v-model="message" class="input add-message__input"></textarea>
+        </label>
+        <button class="button button_style_1">Отправить сообщение</button>
     </form>
-</div>
-    
 </template>
 <script>
 export default {

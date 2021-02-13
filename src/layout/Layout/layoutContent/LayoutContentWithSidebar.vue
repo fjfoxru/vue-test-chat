@@ -1,13 +1,12 @@
 <template>
-<section class="grid__row">
+<div class="grid__row">
 	<!-- Основная колонка -->
-	<div class="grid__main-column">
+	<section class="grid__main-column">
 		<router-view></router-view>
-	</div>
+	</section>
 	<!-- Правая колонка -->
-	<div class="grid__right-column">
+	<aside class="grid__right-column">
 		<router-view name="sidebar"></router-view>
-	</div>
-
-</section>
+	</aside>
+</div>
 </template>

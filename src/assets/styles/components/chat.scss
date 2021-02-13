@@ -1,0 +1,88 @@
+.user-list {
+    background: #f0f9eb;
+    border-color: #67c23a;
+    border: 1px solid #67c23a;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.user-list__title {
+    color: #67c23a;
+    max-width: 325px;
+}
+
+.user-list__user {
+    background: #89c23a;
+    color: #fff;
+    display: inline-flex;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.add-user {
+    display: flex;
+}
+
+.input.add-user__input {
+    margin-right: 15px;
+}
+
+.user-info {
+    margin: 30px 0px 20px 0px;
+    background: #f0f9eb;
+    border: 1px solid #67c23a;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #89c23a;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.add-message {
+    border-top: 2px solid #67c23a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background: #f0f9eb;
+}
+
+.add-message__label {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #67c23a;
+    font-weight: 600;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    min-width: 30%;
+    max-width: 50%;
+}
+
+.message_client {
+    margin-left: auto;
+    background: #ecf5ff;
+    border: 1px solid #b3d8ff;
+}
+
+.message_other {
+    margin-right: auto;
+    background: #fdf6ec;
+    border: 1px solid #e6a23c;
+}
+
+.message__date {
+    font-size: 12px;
+    text-align: right;
+}

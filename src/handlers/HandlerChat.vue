@@ -1,16 +1,17 @@
 <template>
-<main>
-    <div v-if="get_status_need_auth">
-        <p>Нужна авторизация!!!</p>
+<div>
+    <section v-if="get_status_need_auth">
+        <h3 class="title">Нужна авторизация!!!</h3>
         <ChatAddUser @authUser="onAuthUser($event)" />
-    </div>
-    <div v-if="get_user">
-        <p>Ваш логин:<span v-text="get_user.name"></span></p>
-    </div>
+    </section>
+    <section v-if="get_user">
+        <div class="user-info">Ваш логин:<span v-text="get_user.name"></span></div>
+    </section>
 
-    <ChatAddMessage v-if="get_user" @addNewMessage="onAddNewMessage($event)" />
     <ChatListMessages v-if="get_user" :messages="get_messages" :clientId="get_user.id" />
-</main>
+    <ChatAddMessage v-if="get_user" @addNewMessage="onAddNewMessage($event)" />
+    
+</div>
 </template>
 
 <script>
