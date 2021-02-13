@@ -17,6 +17,7 @@ export default {
     methods: {
         sendMessage() {
             this.$emit('addNewMessage', this.message);
+            this.message = '';
         }
     }
 }

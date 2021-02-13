@@ -1,5 +1,6 @@
 <template>
 <div>
+    <button class="button button_style_2" @click="onUserExit">Выход</button>
     <section v-if="get_status_need_auth">
         <h3 class="title">Нужна авторизация!!!</h3>
         <ChatAddUser @authUser="onAuthUser($event)" />
@@ -50,9 +51,14 @@ methods: {
     },
     onAuthUser(name) {
         this.addUser(name);
+        this.addNewMessage({data: new Date(), message: `Пользователь ${this.get_user.name} подключился к чату`, user: 'system'});
     },
     onUpdateLocalStorage() {
         this.fetchMessages();
+    },
+    onUserExit() {
+        this.addNewMessage({data: new Date(), message: `Пользователь ${this.get_user.name} вышел из чата на главную страницу`, user: 'system'});
+        this.$router.push({name: 'Main'});
     }
 },
 }

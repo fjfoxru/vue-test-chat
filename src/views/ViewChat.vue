@@ -1,6 +1,5 @@
 <template>
 <main class="chat-area">
-     <router-link :to="{name: 'Main'}" class="button button_style_2">На главную</router-link>
      <HandlerChat />
 </main>
 </template>
