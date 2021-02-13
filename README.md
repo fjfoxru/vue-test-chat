@@ -1,5 +1,4 @@
-# vue-test-tables
-
+# Локальный чат
 ## Project setup
 ```
 npm install
