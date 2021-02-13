@@ -1,23 +1,17 @@
 # Локальный чат
-## Project setup
+## Перейдите с главной в чат
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Введите логин.
+Сообщение об авторизации увидят пользователи других вкладок
 ```
 
-### Compiles and minifies for production
+### Сообщение отправляется с датой
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Данные хранятся в vuex.
+```
+Данные проходят через vuex.
+В localeStorage хранится история сообщений.
+В sessionStorage хранится пользователь.
+```
